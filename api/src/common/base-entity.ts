@@ -11,8 +11,17 @@ import {
     id: string;
   
     @Column({ type: 'varchar', length: 255 })
-    name: string;
+    firstname: string;
   
+    @Column()
+    lastName: string;
+  
+    @Column()
+    email: string;
+  
+    @Column()
+    password: string;
+
     @Column({ type: 'varchar', length: 255, nullable: true })
     deletedBy: string;
   

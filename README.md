@@ -34,7 +34,7 @@ InstaSchooler is a web application designed for school management, allowing stud
 To get started, clone the repository to your local machine:
 
 ```bash
-    git clone https://github.com/YourUsername/InstaSchooler.git
+    git clone https://github.com/Riadh-Ibrahim/InstaSchooler.git
     cd InstaSchooler
 ```
 ### Backend Setup
@@ -50,9 +50,6 @@ To get started, clone the repository to your local machine:
 
     ```makefile
     MONGO_URI=mongodb://localhost:27017/instaschooler
-    JWT_SECRET=your_jwt_secret_key
-    EMAIL_USER=your_email@example.com
-    EMAIL_PASS=your_email_password
     ```
 
 3. Start the backend server:
@@ -87,9 +84,9 @@ The backend API is built using NestJS and follows RESTful principles. You can re
 ### Example Routes
 
 - **POST** `/auth/login`: Login with email and password.
-- **GET** `/students`: Get a list of all students.
-- **POST** `/students`: Create a new student.
-- **PUT** `/students/:id`: Update student information.
+- **GET** `/student/all-students`: Get a list of all students.
+- **POST** `/student/add-student`: Create a new student.
+- **PUT** `/student/:id`: Update student information.
 - **DELETE** `/students/:id`: Delete a student.
 
 ## Contributing

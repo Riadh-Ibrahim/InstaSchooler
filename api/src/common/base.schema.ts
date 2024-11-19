@@ -27,6 +27,12 @@ export class BaseSchema extends Document {
 
   @Prop({ type: Date, default: null })
   deletedAt: Date;
+
+  @Prop({
+    type: String,
+    default: '../../../assets/default-profile-picture.jpg',
+  })
+  profilePicture: string;
 }
 
 export const BaseEntitySchema = SchemaFactory.createForClass(BaseSchema);

@@ -37,7 +37,6 @@ To get started, clone the repository to your local machine:
     git clone https://github.com/YourUsername/InstaSchooler.git
     cd InstaSchooler
 ```
-
 ### Backend Setup
 
 1. Install backend dependencies:

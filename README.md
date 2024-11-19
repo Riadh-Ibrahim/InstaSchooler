@@ -83,35 +83,30 @@ The backend API is built using NestJS and follows RESTful principles. You can re
 
 ### Example Routes
 
-- **POST** `/auth/login`: Login with email and password.
-- **GET** `/student/all-students`: Get a list of all students.
-- **POST** `/student/add-student`: Create a new student.
-- **PUT** `/student/:id`: Update student information.
-- **DELETE** `/students/:id`: Delete a student.
+*   **POST** /auth/login: Login with email and password.
+    
+*   **GET** /students: Get a list of all students.
+    
+*   **POST** /students: Create a new student.
+    
+*   **PUT** /students/:id: Update student information.
+    
+*   **DELETE** /students/:id: Delete a student.
+    
 
-## Contributing
+Contributing
+------------
 
 Contributions are welcome! If you have ideas for new features, improvements, or bug fixes, feel free to submit an issue or create a pull request.
 
 ### How to Contribute
 
-1. Fork the repository.
-2. Create a new branch:
-
-    ```bash
-    git checkout -b feature/your-feature
-    ```
-
-3. Commit your changes:
-
-    ```bash
-    git commit -am 'Add new feature'
-    ```
-
-4. Push to the branch:
-
-    ```bash
-    git push origin feature/your-feature
-    ```
-
-5. Create a new Pull Request.
+1.  Fork the repository.
+    
+2.  Create a new branch (git checkout -b feature/your-feature).
+    
+3.  Commit your changes (git commit -am 'Add new feature').
+    
+4.  Push to the branch (git push origin feature/your-feature).
+    
+5.  Create a new Pull Request.

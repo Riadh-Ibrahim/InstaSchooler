@@ -48,12 +48,12 @@ export class TeacherService {
   //     service: 'Gmail',
   //     auth: {
   //       user: 'instaschooler1@gmail.com',
-  //       pass: 'InstaSchooler@2024',
+  //       pass: '',
   //     },
   //   });
 
   //   const mailOptions = {
-  //     from: 'riadhibrahim007@gmail.com',
+  //     from: 'instaschooler1@gmail.com',
   //     to: recipient,
   //     subject: 'Welcome to Our Platform',
   //     text: `Welcome to our platform!\n\nYour credentials are as follows:\nEmail: ${email}\nPassword: ${password}\n\nPlease keep your credentials secure.`,

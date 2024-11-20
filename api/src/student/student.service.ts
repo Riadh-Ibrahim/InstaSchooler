@@ -49,7 +49,7 @@ export class StudentService {
   //     service: 'Gmail',
   //     auth: {
   //       user: 'instaschooler1@gmail.com',
-  //       pass: 'InstaSchooler@2024',
+  //       pass: '',
   //     },
   //   });
 

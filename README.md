@@ -1,6 +1,6 @@
 # InstaSchooler
 
-InstaSchooler is a web application designed for school management, allowing students, teachers, and administrators to interact with a variety of features, including account management, student and teacher information, reservations, and more.
+InstaSchooler is a web application ERP system designed for school management, allowing students, teachers, and administrators to interact with a variety of features, including account management, student and teacher information, reservations, and more.
 
 ## Features
 

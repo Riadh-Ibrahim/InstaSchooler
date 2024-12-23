@@ -1,0 +1,132 @@
+.divider {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #4caf50, #4caf50 50%, #ddd 50%, #ddd);
+  margin: 20px 0; /* Adjust the margin to control spacing */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 0 0 20rem;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group > div {
+  flex: 1 1 calc(50% - 20px);
+  min-width: 200px;
+}
+
+.radio-group,
+.checkbox-group,
+.phone-group {
+  margin-top: 1.6rem;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1rem; /* Adjust spacing between options */
+  vertical-align: middle; /* Align text and input in the middle */
+}
+
+.radio-group input,
+.checkbox-group input {
+  margin-left: 5px; /* Space between label text and radio button */
+  vertical-align: middle; /* Align radio button with label */
+}
+
+.radio-group input,
+.checkbox-group input {
+  margin-top: 0.8rem; /* Push the radio button down */
+}
+
+.phone-group .phone-field {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.phone-group .flag {
+  width: 20px;
+  height: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  width: 12rem;
+  margin-left: 33rem;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button:hover {
+  background-color: #0c430f;
+}
+
+@media screen and (max-width: 768px) {
+  .form-group > div {
+    flex: 1 1 100%;
+  }
+
+  .radio-group label,
+  .checkbox-group label {
+    margin-right: 5px;
+    margin-bottom: 10px; /* Add space between radio options for mobile */
+  }
+}

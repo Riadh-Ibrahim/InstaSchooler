@@ -1,0 +1,112 @@
+.header {
+  margin-left: 15.625rem;
+  transition: margin-left 0.5s ease;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+}
+
+.header-expanded {
+  margin-left: 4rem;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 3rem;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.brand-name {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 0.005rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-bar {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  padding-right: 2rem;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0.8rem;
+  font-size: 1.6rem;
+  color: #007BFF;
+}
+
+.search-bar:hover {
+  border-color: #007BFF;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: #666;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #007BFF;
+  transform: scale(1.1);
+}
+
+.report-container {
+  display: flex;
+  align-items: center;
+}
+
+.btn-report {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ede2e4;
+  color: #6c5e5e;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-report:hover {
+  background-color: #5b4b4b;
+  transform: scale(1.05);
+  color: wheat;
+}
+
+.report-icon {
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  font-style: normal;
+}

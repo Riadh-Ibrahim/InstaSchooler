@@ -1,0 +1,71 @@
+<div class="container">
+  <h1>Student Registration</h1>
+  <div class="divider"></div>
+  <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+    <div class="section">
+      <h2>Basic Information</h2>
+      <div class="form-group">
+        <div>
+          <label for="firstname">First Name *</label>
+          <input id="firstname" formControlName="firstname" />
+        </div>
+        <div>
+          <label for="lastName">Last Name *</label>
+          <input id="lastName" formControlName="lastName" />
+        </div>
+        <div>
+          <label for="email">Email *</label>
+          <input type="email" id="email" formControlName="email" />
+        </div>
+        <div>
+          <label for="profilePicture">Profile Picture (Optional)</label>
+          <input type="file" id="profilePicture" />
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Additional Information</h2>
+      <div class="form-group">
+        <div>
+          <label for="dateOfBirth">Date of Birth *</label>
+          <input type="date" id="dateOfBirth" formControlName="dateOfBirth" />
+        </div>
+
+        <div class="radio-group">
+          <label>Gender *</label>
+          <label class="radio-label">Male <input type="radio" value="Male" formControlName="gender" /></label>
+          <label class="radio-label">Female <input type="radio" value="Female" formControlName="gender" /></label>
+        </div>
+
+        <div>
+          <label for="address">Address *</label>
+          <input id="address" formControlName="address" />
+        </div>
+
+        <div class="checkbox-group">
+          <label>Has Paid *</label>
+          <label class="radio-label">Yes <input type="radio" name="hasPaid" value="Yes" formControlName="hasPaid" /></label>
+          <label class="radio-label">No <input type="radio" name="hasPaid" value="No" formControlName="hasPaid" /></label>
+        </div>
+
+
+        <div>
+          <label for="parentEmail">Parent's Email *</label>
+          <input type="email" id="parentEmail" formControlName="parentEmail" />
+        </div>
+
+        <div class="phone-group">
+          <label for="phoneNumber">Parent's Phone *</label>
+          <div class="phone-field">
+            <img src="../../../assets/images/flag.png" alt="Tunisia Flag" class="flag" />
+            <span>+216</span>
+            <input id="phoneNumber" formControlName="phoneNumber" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="!studentForm.valid">Create Student</button>
+  </form>
+</div>

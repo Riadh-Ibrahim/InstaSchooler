@@ -1,8 +1,8 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable, NotFoundException, ConflictException} from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import * as bcrypt from 'bcrypt';
-import { Teacher } from './schemas/teacher.schema';
+import { Teacher } from './schema/teacher.schema';
 import { CreateTeacherDto } from './dto/create-teacher.dto';
 import { UpdateTeacherDto } from './dto/update-teacher.dto';
 
@@ -15,6 +15,19 @@ export class TeacherService {
 
   // Create a teacher and send an email with credentials
   async createTeacher(createTeacherDto: CreateTeacherDto): Promise<Teacher> {
+    // Check if the phone number or email already exists
+    const existingTeacher = await this.teacherModel.findOne({
+      $or: [
+        { phone: createTeacherDto.phone },
+        { email: createTeacherDto.email },
+      ],
+    });
+
+    if (existingTeacher) {
+      throw new ConflictException('A teacher with this phone number or email already exists.');
+    }
+    
+    
     // Automatically generate the password as 'firstname@LASTNAME'
     const generatedPassword = `${createTeacherDto.firstname.toLowerCase()}@${createTeacherDto.lastName.toUpperCase()}`;
 

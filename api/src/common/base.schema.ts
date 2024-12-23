@@ -13,7 +13,7 @@ export class BaseSchema extends Document {
   @Prop({ type: String, required: true })
   lastName: string;
 
-  @Prop({ type: String, required: true })
+  @Prop({ type: String, required: true, unique:true })
   email: string;
 
   @Prop({ type: String, required: true })

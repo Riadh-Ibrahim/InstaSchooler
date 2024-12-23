@@ -1,9 +1,9 @@
 export enum Matiere {
-    Francais = 'Français',
+    Francais = 'Francais',
     Anglais = 'Anglais',
     Arabe = 'Arabe',
     Philosophie = 'Philosophie',
-    Mathematiques = 'Mathématiques',
+    Mathematiques = 'Mathematiques',
     Physique = 'Physique',
     Chimie = 'Chimie',
     Biologie = 'Biologie',
@@ -15,4 +15,4 @@ export enum Matiere {
     Technologie = 'Technologie',
     Arts = 'Arts',
     Sport = 'Sport',
-}
+  }  

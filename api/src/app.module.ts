@@ -6,6 +6,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { CommonModule } from './common/common.module';
 import { StudentModule } from './student/student.module';
 import { TeacherModule } from './teacher/teacher.module';
+import { ClassModule } from './class/class.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { TeacherModule } from './teacher/teacher.module';
     CommonModule,
     StudentModule,
     TeacherModule,
+    ClassModule,
   ],
   controllers: [AppController],
   providers: [AppService],
